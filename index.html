@@ -21,8 +21,16 @@
   
       // Reduce width and height by a certain percentage (e.g., 50%)
       var newWidth = image.width * 0.5;
+      var newWidth = image.width * 0.5;
   
       // Apply the new dimensions
       image.style.width = newWidth + "px";
+      image.style.height = 1170 + "px";
+    }
+    function resetImage() {
+        var image = document.getElementById("heartbeest");
+
+        image.style.width = 740 + "px";
+        image.style.height = 1170 + "px";
     }
   </script>
