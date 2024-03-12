@@ -1,3 +1,28 @@
 <h1>Daisy</h1>
 <img src="cat.jpg" alt="Cat">
 
+<h2>Cokes Hearbeest</h2>
+<img id="heartbeest" src="heartbeest.jpg" alt="Hearbeest">
+<button onclick="squeezeImage()">Squeeze Image</button>
+<button onclick="resetImage()">Reset</button>
+
+
+<style>
+    .heartbeest {
+        width:740px;
+        height:1170px;
+
+    }
+</style>
+
+<script>
+    function squeezeImage() {
+      var image = document.getElementById("heartbeest");
+  
+      // Reduce width and height by a certain percentage (e.g., 50%)
+      var newWidth = image.width * 0.5;
+  
+      // Apply the new dimensions
+      image.style.width = newWidth + "px";
+    }
+  </script>
